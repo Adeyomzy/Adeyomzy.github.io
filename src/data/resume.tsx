@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { House, Library, Phone } from "lucide-react";
+import { ExternalLink, House, Library, Phone } from "lucide-react";
 
 const BASE_URL = import.meta.env.BASE_URL;
 
@@ -28,11 +28,11 @@ export const DATA = {
       text: "These are demonstration projects for now. Replace each card with your real project, the question you answered, the tools you used, and the result.",
     },
     hackathons: {
-      order: 7,
-      enabled: false,
-      label: "Activities",
-      heading: "Activities",
-      text: "",
+      order: 6,
+      enabled: true,
+      label: "Credentials",
+      heading: "Certifications & Training",
+      text: "Professional certifications, courses, and practical training supporting my growth in data analysis and business intelligence.",
     },
     photos: {
       order: 8,
@@ -40,7 +40,7 @@ export const DATA = {
       heading: "Photos",
     },
     contact: {
-      order: 6,
+      order: 7,
       enabled: true,
       label: "Contact",
       heading: "Let's Connect",
@@ -198,5 +198,36 @@ export const DATA = {
       video: "",
     },
   ],
-  hackathons: [],
+  hackathons: [
+    {
+      title: "Certification Name",
+      dates: "Year earned",
+      location: "Issuing Organisation",
+      description:
+        "Placeholder: replace this with what the certification covered, the skills you developed, and any practical project you completed.",
+      image: "",
+      links: [
+        {
+          title: "View credential",
+          href: "#",
+          icon: <ExternalLink className="size-3" />,
+        },
+      ],
+    },
+    {
+      title: "Course or Training Name",
+      dates: "Year completed",
+      location: "Training Provider",
+      description:
+        "Placeholder: use this entry for another certificate, bootcamp, workshop, professional course, or relevant training programme.",
+      image: "",
+      links: [
+        {
+          title: "View credential",
+          href: "#",
+          icon: <ExternalLink className="size-3" />,
+        },
+      ],
+    },
+  ],
 } as const;
