@@ -27,7 +27,7 @@ Keep quotation marks, commas, brackets, and labels unchanged. Replace only the w
 
 ## 2. Certification logos
 
-The Certifications & Training timeline shows an award icon automatically while `image` is empty. To use an issuer logo, upload it to `public` and change the entry to a value such as `image: `${BASE_URL}issuer-logo.png``.
+The Certifications & Training timeline shows an award icon automatically while `image` is empty. To use an issuer logo, upload it to `public` and change the entry to a value such as `image: "issuer-logo.png"` and place that file in `public`.
 
 ## 3. Profile picture
 
