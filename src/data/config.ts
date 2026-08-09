@@ -5,6 +5,9 @@ export const CONFIG = {
     twitterHandle: "@your_handle",
   },
   seo: {
+    defaultTitle: "Enoch Adeniyi (Adeyomzy) | Data Analyst & Data Engineer",
+    defaultDescription:
+      "Enoch Adeniyi, known as Adeyomzy, is a Data Analyst and Data Engineer building Power BI dashboards, Excel reports, ETL pipelines and Python solutions.",
     titleTemplate: "%s | %n",
     twitterCard: "summary_large_image" as const,
     robots: "index, follow",
