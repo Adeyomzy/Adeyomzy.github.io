@@ -18,14 +18,22 @@ Use your browser's Find command to locate these placeholder values:
 - `+2340000000000` — replace both occurrences with your phone number, including country code
 - `your-channel` — replace with your YouTube channel handle
 - `Sales Performance Dashboard`, `Customer Churn Analysis`, and `Operations Reporting Workbook` — demo projects to replace
+- `Certification Name` and `Course or Training Name` — certification timeline placeholders
+- `Issuing Organisation` and `Training Provider` — replace with the organisation that issued each credential
+- `Year earned` and `Year completed` — replace with the relevant dates
+- `View credential` links — replace `href: "#"` with the public verification URL for each certificate
 
 Keep quotation marks, commas, brackets, and labels unchanged. Replace only the words inside quotation marks. Work and Education use a professional fallback icon while `logoUrl` is empty. Later, you can place an organisation logo in `public` and use a value such as `${BASE_URL}my-school-logo.png`.
 
-## 2. Profile picture
+## 2. Certification logos
+
+The Certifications & Training timeline shows an award icon automatically while `image` is empty. To use an issuer logo, upload it to `public` and change the entry to a value such as `image: `${BASE_URL}issuer-logo.png``.
+
+## 3. Profile picture
 
 Upload your photo into the `public` folder and name it `picofme.png`. Uploading a new file with the same name replaces the demo photo.
 
-## 3. Blog posts
+## 4. Blog posts
 
 Blog posts live in `src/content/blog` and end in `.mdx`.
 
@@ -50,7 +58,7 @@ summary: "What I learned while building a sales dashboard."
 Write the article here.
 ```
 
-## 4. Site settings
+## 5. Site settings
 
 Edit `src/data/config.ts` only when you need to change the site address, text size, or colours. Leave this file alone for ordinary content changes.
 
