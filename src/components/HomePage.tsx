@@ -112,7 +112,7 @@ const sectionComponents: Record<string, React.ReactNode> = {
     </section>
   ),
   hackathons: (
-    <section id="hackathons">
+    <section id="certifications">
       <BlurFade delay={BLUR_FADE_DELAY * 13}>
         <HackathonsSection />
       </BlurFade>
