@@ -1,56 +1,22 @@
 export const CONFIG = {
-  // ---------------------------------------------------------------------------
-  // Site Settings
-  // ---------------------------------------------------------------------------
   site: {
-    url: "https://alexmercer.dev",
+    url: "https://adeyomzy.github.io",
     locale: "en_US",
-    twitterHandle: "@alexmercer_dev",
+    twitterHandle: "@your_handle",
   },
-
-  // ---------------------------------------------------------------------------
-  // SEO Settings
-  // ---------------------------------------------------------------------------
   seo: {
-    titleTemplate: "%s | %n", // %s = page title, %n = DATA.name
+    titleTemplate: "%s | %n",
     twitterCard: "summary_large_image" as const,
     robots: "index, follow",
   },
-
-  // ---------------------------------------------------------------------------
-  // Typography
-  // ---------------------------------------------------------------------------
   typography: {
-    // Base font size as a percentage. 100 = browser default (16px).
-    // 110 = 10% larger or 90 = 10% smaller, across all text, headings, and links simultaneously.
     baseFontSize: 115,
   },
-
-  // ---------------------------------------------------------------------------
-  // Blog Settings
-  // ---------------------------------------------------------------------------
   blog: {
     postsPerPage: 10,
   },
-
-  // ---------------------------------------------------------------------------
-  // Font Settings
-  // See https://fontsource.org/?variable=true for fonts that can be installed via package registry
-  // To change fonts:
-  // 1. pnpm install @fontsource-variable/<font-name> (for example 'pnpm add @fontsource-variable/inter'). Install BOTH the sans and mono fonts.
-  // 2. Edit src/styles/global.css - swap the @import and --font-sans and --font-mono values
-  // ---------------------------------------------------------------------------
-
-  // ---------------------------------------------------------------------------
-  // Design Settings
-  // 1. Pick a theme at ui.shadcn.com/themes or generate one with a tool like tweakcn.com
-  // 2. Copy the CSS variables block
-  // 3. Paste into BELOW with the naming conversion already used
-  // ---------------------------------------------------------------------------
-
   theme: {
     radius: "0.625rem",
-
     light: {
       background: "oklch(1 0 0)",
       foreground: "oklch(0.145 0 0)",
@@ -71,7 +37,6 @@ export const CONFIG = {
       input: "oklch(0.922 0 0)",
       ring: "oklch(0.708 0 0)",
     },
-
     dark: {
       background: "oklch(0.18 0 0)",
       foreground: "oklch(0.985 0 0)",
@@ -93,5 +58,4 @@ export const CONFIG = {
       ring: "oklch(0.556 0 0)",
     },
   },
-
 } as const;
