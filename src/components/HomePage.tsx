@@ -9,7 +9,7 @@ import HackathonsSection from "@/components/section/hackathons-section";
 import PhotosSection from "@/components/section/photos-section";
 import ProjectsSection from "@/components/section/projects-section";
 import WorkSection from "@/components/section/work-section";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, GraduationCap } from "lucide-react";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -63,7 +63,7 @@ const sectionComponents: Record<string, React.ReactNode> = {
                       className="size-8 md:size-10 p-1 border rounded-full shadow ring-2 ring-border overflow-hidden object-contain flex-none"
                     />
                   ) : (
-                    <div className="size-8 md:size-10 p-1 border rounded-full shadow ring-2 ring-border bg-muted flex-none" />
+                    <div className="size-8 md:size-10 p-2 border rounded-full shadow ring-2 ring-border bg-background text-muted-foreground flex-none">\n                      <GraduationCap className="size-full" aria-hidden />\n                    </div>
                   )}
                   <div className="flex-1 min-w-0 flex flex-col gap-0.5">
                     <div className="font-semibold leading-none flex items-center gap-2">
