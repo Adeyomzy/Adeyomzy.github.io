@@ -4,15 +4,15 @@ import { ExternalLink, House, Library, Phone } from "lucide-react";
 const BASE_URL = import.meta.env.BASE_URL;
 
 export const DATA = {
-  name: "Adeyemi (Enoch) Adeniyi",
-  initials: "AA",
+  name: "Enoch Adeniyi",
+  initials: "EA",
   url: "https://adeyomzy.github.io",
   location: "Lagos State, Nigeria",
   locationLink: "https://www.google.com/maps/place/Lagos,+Nigeria",
   description:
     "Big Data Engineer | Data Analyst | Full Stack Developer | Automation & Workflow Integration | Building Scalable Data and Web Solutions",
   summary:
-    "I’m a results-driven Data Engineer and Python Developer with a strong foundation in data analysis, automation, and backend development. I build scalable data pipelines, cloud-based architectures, and automation systems that transform raw data into actionable insights.\n\nMy experience covers Python, SQL, Airflow, Spark, Databricks, Snowflake, Microsoft Fabric, Docker, dbt, Power BI, Tableau, ETL/ELT development, data modelling, workflow orchestration, and backend services with FastAPI and Django REST Framework. I also use n8n for workflow and API automation while expanding my work in Kafka, Terraform, CI/CD, Kubernetes, AWS, Azure, GCP, machine learning, and predictive analytics.\n\nI’m open to collaborations, technical discussions, and opportunities across data engineering, analytics, automation, and backend development.",
+    "I’m a results-driven Data Analyst and Data Engineer focused on transforming raw data into actionable insights and scalable digital solutions.\n\nMy data analysis toolkit includes Microsoft Excel, Power BI, DAX, SQL, Python, Tableau, data cleaning, data modelling, KPI reporting, and interactive dashboard development. I use these tools to analyse operational performance, identify trends, automate reports, and communicate insights that support better business decisions.\n\nBeyond analytics, I build ETL/ELT pipelines, automated workflows, APIs, backend services, and full-stack web applications. My technical experience includes PostgreSQL, Apache Airflow, Spark, Databricks, Snowflake, Microsoft Fabric, dbt, Docker, n8n, FastAPI, and Django REST Framework.\n\nI’m passionate about building accurate and practical solutions across data analysis, business intelligence, data engineering, automation, and full-stack development.",
   avatarUrl: `${BASE_URL}picofme.png`,
   ogImage: `${BASE_URL}og_image.png`,
   sections: {
