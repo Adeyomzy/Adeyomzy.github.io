@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <div className="pointer-events-none fixed inset-x-0 bottom-4 z-30">
       <Dock magnification={48}
-        className="z-50 pointer-events-auto relative h-12 p-1.5 w-fit max-w-[calc(100vw-1rem)] mx-auto flex gap-1 border bg-card/90 backdrop-blur-3xl shadow-[0_0_10px_3px] shadow-primary/5">
+        className="z-50 pointer-events-auto relative h-12 p-1.5 w-fit max-w-[calc(100vw-1rem)] max-sm:scale-[0.86] max-sm:origin-bottom mx-auto flex gap-1 border bg-card/90 backdrop-blur-3xl shadow-[0_0_10px_3px] shadow-primary/5">
         {DATA.navbar.map((item) => {
           const isExternal = item.href.startsWith("http");
           return (
@@ -21,6 +21,7 @@ export default function Navbar() {
               <TooltipTrigger asChild>
                 <a
                   href={item.href}
+                  aria-label={item.label}
                   target={isExternal ? "_blank" : undefined}
                   rel={isExternal ? "noopener noreferrer" : undefined}
                 >
@@ -54,6 +55,7 @@ export default function Navbar() {
                 <TooltipTrigger asChild>
                   <a
                     href={social.url}
+                    aria-label={social.name}
                     target={isExternal ? "_blank" : undefined}
                     rel={isExternal ? "noopener noreferrer" : undefined}
                   >
@@ -67,7 +69,7 @@ export default function Navbar() {
                   sideOffset={8}
                   className="rounded-xl bg-primary text-primary-foreground px-4 py-2 text-sm shadow-[0_10px_40px_-10px_rgba(0,0,0,0.3)] dark:shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)]"
                 >
-                  <p>{name}</p>
+                  <p>{social.name}</p>
                   <TooltipArrow className="fill-primary" />
                 </TooltipContent>
               </Tooltip>
