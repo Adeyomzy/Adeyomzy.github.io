@@ -110,7 +110,7 @@ export const DATA = {
       },
       Youtube: {
         name: "Youtube",
-        url: "https://youtube.com/@your-channel",
+        url: "https://www.youtube.com/@Enotora",
         icon: Icons.youtube,
         navbar: true,
       },
