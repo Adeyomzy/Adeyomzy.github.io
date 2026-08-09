@@ -17,7 +17,6 @@ const prettyCodeOptions = {
 
 export default defineConfig({
   site: CONFIG.site.url,
-  base: '/Adeyomzy',
   output: 'static',
   vite: { plugins: [tailwindcss()] },
   integrations: [
