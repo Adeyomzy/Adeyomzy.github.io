@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { House, Library } from "lucide-react";
+import { House, Library, Phone } from "lucide-react";
 
 const BASE_URL = import.meta.env.BASE_URL;
 
@@ -17,11 +17,11 @@ export const DATA = {
   ogImage: `${BASE_URL}og_image.png`,
   sections: {
     about: { order: 1, enabled: true, heading: "About" },
-    work: { order: 5, enabled: false, heading: "Work Experience", presentLabel: "Present" },
-    education: { order: 6, enabled: false, heading: "Education" },
-    skills: { order: 2, enabled: true, heading: "Skills" },
+    work: { order: 2, enabled: true, heading: "Work Experience", presentLabel: "Present" },
+    education: { order: 3, enabled: true, heading: "Education" },
+    skills: { order: 4, enabled: true, heading: "Skills" },
     projects: {
-      order: 3,
+      order: 5,
       enabled: true,
       label: "My Projects",
       heading: "Selected data projects",
@@ -40,7 +40,7 @@ export const DATA = {
       heading: "Photos",
     },
     contact: {
-      order: 4,
+      order: 6,
       enabled: true,
       label: "Contact",
       heading: "Let's Connect",
@@ -62,7 +62,7 @@ export const DATA = {
   ],
   contact: {
     email: "your-email@example.com",
-    tel: "",
+    tel: "+2340000000000",
     social: {
       GitHub: {
         name: "GitHub",
@@ -86,18 +86,62 @@ export const DATA = {
         name: "Youtube",
         url: "https://youtube.com/@your-channel",
         icon: Icons.youtube,
-        navbar: false,
+        navbar: true,
       },
       email: {
         name: "Send Email",
         url: "mailto:your-email@example.com",
         icon: Icons.email,
-        navbar: false,
+        navbar: true,
+      },
+      Phone: {
+        name: "Phone",
+        url: "tel:+2340000000000",
+        icon: Phone,
+        navbar: true,
       },
     },
   },
-  work: [],
-  education: [],
+  work: [
+    {
+      company: "Company Name",
+      href: "#",
+      title: "Data Analyst Intern",
+      logoUrl: "",
+      start: "Month 2025",
+      end: null,
+      description:
+        "Demo entry: replace this with the organisation, your responsibilities, the tools you used, and a measurable result.",
+    },
+    {
+      company: "Organisation Name",
+      href: "#",
+      title: "Reporting Assistant",
+      logoUrl: "",
+      start: "Month 2024",
+      end: "Month 2025",
+      description:
+        "Demo entry: describe the reports, dashboards, data cleaning, or operational support you provided.",
+    },
+  ],
+  education: [
+    {
+      school: "University Name",
+      href: "#",
+      degree: "Degree or Course Name",
+      logoUrl: "",
+      start: "Start year",
+      end: "End year",
+    },
+    {
+      school: "Training Provider",
+      href: "#",
+      degree: "Data Analytics Certificate",
+      logoUrl: "",
+      start: "Start year",
+      end: "End year",
+    },
+  ],
   projects: [
     {
       title: "Sales Performance Dashboard",
