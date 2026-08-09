@@ -134,7 +134,7 @@ export const DATA = {
     {
       company: "Tronary",
       href: "https://www.linkedin.com/company/96444493/",
-      title: "Web Developer · Full-time",
+      title: "Web Developer · Part-time",
       logoUrl: "",
       start: "Aug 2023",
       end: null,
@@ -213,10 +213,10 @@ export const DATA = {
     {
       school: "Federal University of Technology Minna",
       href: "https://www.linkedin.com/school/15096305/",
-      degree: "Bachelor of Technology (BTech), Industrial Technology/Technician",
+      degree: "Bachelor of Technology (B.Tech), Industrial and Technology Education (Electrical and Electronics Tehnology)",
       logoUrl: "",
-      start: "2019",
-      end: "2024",
+      start: "2020",
+      end: "2025",
     },
   ],
   projects: [
