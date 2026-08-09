@@ -25,7 +25,8 @@ export async function getStaticPaths() {
 
 const { post, previousPost, nextPost } = Astro.props;
 const { title, publishedAt, summary, image } = post.data;
-const slug = post.id;\nconst base = import.meta.env.BASE_URL;
+const slug = post.id;
+const base = import.meta.env.BASE_URL;
 
 const { Content } = await render(post);
 
