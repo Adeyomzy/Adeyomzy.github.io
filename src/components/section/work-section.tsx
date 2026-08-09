@@ -15,7 +15,9 @@ function LogoImage({ src, alt }: { src: string; alt: string }) {
 
   if (!src || imageError) {
     return (
-      <div className="size-8 md:size-10 p-2 border rounded-full shadow ring-2 ring-border bg-background text-muted-foreground flex-none">\n        <BriefcaseBusiness className="size-full" aria-hidden />\n      </div>
+      <div className="size-8 md:size-10 p-2 border rounded-full shadow ring-2 ring-border bg-background text-muted-foreground flex-none">
+        <BriefcaseBusiness className="size-full" aria-hidden />
+      </div>
     );
   }
 
