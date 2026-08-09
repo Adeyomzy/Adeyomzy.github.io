@@ -21,7 +21,7 @@ export const DATA = {
   summary:
     "I’m a results-driven Data Analyst and Data Engineer focused on transforming raw data into actionable insights and scalable digital solutions.\n\nMy data analysis toolkit includes Microsoft Excel, Power BI, DAX, SQL, Python, Tableau, data cleaning, data modelling, KPI reporting, and interactive dashboard development. I use these tools to analyse operational performance, identify trends, automate reports, and communicate insights that support better business decisions.\n\nBeyond analytics, I build ETL/ELT pipelines, automated workflows, APIs, backend services, and full-stack web applications. My technical experience includes PostgreSQL, Apache Airflow, Spark, Databricks, Snowflake, Microsoft Fabric, dbt, Docker, n8n, FastAPI, and Django REST Framework.\n\nI’m passionate about building accurate and practical solutions across data analysis, business intelligence, data engineering, automation, and full-stack development.",
   avatarUrl: `${BASE_URL}picofme.png`,
-  ogImage: `${BASE_URL}og_image.png`,
+  ogImage: `${BASE_URL}picofme.png`,
   sections: {
     about: { order: 1, enabled: true, heading: "About" },
     work: { order: 2, enabled: true, heading: "Work Experience", presentLabel: "Present" },
