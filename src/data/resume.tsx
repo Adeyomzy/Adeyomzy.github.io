@@ -5,6 +5,13 @@ const BASE_URL = import.meta.env.BASE_URL;
 
 export const DATA = {
   name: "Enoch Adeniyi",
+  fullName: "Adeniyi Adeyemi Enoch",
+  alternateNames: [
+    "Adeyomzy",
+    "Adeniyi Enoch",
+    "Enoch Adeniyi",
+    "Adeniyi Adeyemi Enoch",
+  ],
   initials: "EA",
   url: "https://adeyomzy.github.io",
   location: "Lagos State, Nigeria",
