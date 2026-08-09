@@ -63,7 +63,9 @@ const sectionComponents: Record<string, React.ReactNode> = {
                       className="size-8 md:size-10 p-1 border rounded-full shadow ring-2 ring-border overflow-hidden object-contain flex-none"
                     />
                   ) : (
-                    <div className="size-8 md:size-10 p-2 border rounded-full shadow ring-2 ring-border bg-background text-muted-foreground flex-none">\n                      <GraduationCap className="size-full" aria-hidden />\n                    </div>
+                    <div className="size-8 md:size-10 p-2 border rounded-full shadow ring-2 ring-border bg-background text-muted-foreground flex-none">
+                      <GraduationCap className="size-full" aria-hidden />
+                    </div>
                   )}
                   <div className="flex-1 min-w-0 flex flex-col gap-0.5">
                     <div className="font-semibold leading-none flex items-center gap-2">
