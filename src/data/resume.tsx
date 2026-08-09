@@ -6,7 +6,7 @@ const BASE_URL = import.meta.env.BASE_URL;
 export const DATA = {
   name: "Adeyomzy",
   initials: "AD",
-  url: "https://adeyomzy.github.io/Adeyomzy",
+  url: "https://adeyomzy.github.io",
   location: "Nigeria",
   locationLink: "https://www.google.com/maps/place/Nigeria",
   description:
