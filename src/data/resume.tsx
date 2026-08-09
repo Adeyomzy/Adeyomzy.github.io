@@ -235,7 +235,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "https://opengraph.githubassets.com/1/Adeyomzy/Oil_and_gas_field-production-analytics",
+      image: "/oil-gas-dashboard.png",
       video: "",
     },
     {
@@ -253,7 +253,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "https://opengraph.githubassets.com/1/Adeyomzy/Credit-Risk-and-Loan-Default-Analytics---Power-BI-Project",
+      image: "/credit-risk-dashboard.png",
       video: "",
     },
     {
@@ -271,7 +271,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "https://opengraph.githubassets.com/1/Adeyomzy/Advanced_Inventory_Management_Forecasting_System",
+      image: "/inventory-dashboard.png",
       video: "",
     },
     {
