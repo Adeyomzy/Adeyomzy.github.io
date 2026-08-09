@@ -14,14 +14,14 @@ interface Props {
 
 const {
   title,
-  description = DATA.description,
+  description = CONFIG.seo.defaultDescription,
   image,
-  canonicalURL = Astro.url.href,
+  canonicalURL = new URL(Astro.url.pathname, CONFIG.site.url).href,
 } = Astro.props;
 
 const pageTitle = title
   ? CONFIG.seo.titleTemplate.replace("%s", title).replace("%n", DATA.name)
-  : DATA.name;
+  : CONFIG.seo.defaultTitle;
 const ogImage = image
   ? image.startsWith("http")
     ? image
@@ -31,6 +31,35 @@ const ogImage = image
 const { light, dark, radius } = CONFIG.theme;
 const base = import.meta.env.BASE_URL;
 const { baseFontSize } = CONFIG.typography;
+const isHomePage = Astro.url.pathname === base || Astro.url.pathname === "/";
+const personJsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: DATA.name,
+  alternateName: DATA.alternateNames,
+  url: CONFIG.site.url,
+  image: `${CONFIG.site.url}/picofme.png`,
+  jobTitle: ["Data Analyst", "Data Engineer", "Full-Stack Developer"],
+  sameAs: [
+    DATA.contact.social.GitHub.url,
+    DATA.contact.social.LinkedIn.url,
+  ],
+  email: `mailto:${DATA.contact.email}`,
+  telephone: DATA.contact.tel,
+  knowsAbout: [
+    "Data Analysis",
+    "Microsoft Excel",
+    "Power BI",
+    "DAX",
+    "SQL",
+    "Python",
+    "Tableau",
+    "Data Engineering",
+    "ETL",
+    "Business Intelligence",
+    "Full-Stack Development",
+  ],
+}).replace(/</g, "\\u003c");
 ---
 
 <html
@@ -108,13 +137,24 @@ const { baseFontSize } = CONFIG.typography;
     ></style>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
-    <link rel="icon" type="image/x-icon" href={`${base}favicon.ico`} />
+    <link rel="icon" type="image/png" href={`${base}picofme.png`} />
+    <link rel="apple-touch-icon" href={`${base}picofme.png`} />
 
     <!-- Primary meta -->
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
+    <meta name="author" content={DATA.fullName} />
     <link rel="canonical" href={canonicalURL} />
+
+    {
+      isHomePage && (
+        <script
+          is:inline
+          type="application/ld+json"
+          set:html={personJsonLd}
+        />
+      )
+    }
 
     <!-- Robots -->
     <meta name="robots" content={CONFIG.seo.robots} />
