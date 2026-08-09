@@ -2,10 +2,11 @@
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import { Timeline, TimelineItem, TimelineConnectItem } from "@/components/timeline";
+import { Award } from "lucide-react";
 
 export default function HackathonsSection() {
   return (
-    <section id="hackathons" className="overflow-hidden">
+    <section id="certifications" className="overflow-hidden">
       <div className="flex min-h-0 flex-col gap-y-8 w-full">
         <div className="flex flex-col gap-y-4 items-center justify-center">
           <div className="flex items-center w-full">
@@ -33,7 +34,9 @@ export default function HackathonsSection() {
                     className="size-10 bg-card z-10 shrink-0 overflow-hidden p-1 border rounded-full shadow ring-2 ring-border object-contain flex-none"
                   />
                 ) : (
-                  <div className="size-10 bg-card z-10 shrink-0 overflow-hidden p-1 border rounded-full shadow ring-2 ring-border flex-none" />
+                  <div className="size-10 bg-card z-10 shrink-0 overflow-hidden p-2 border rounded-full shadow ring-2 ring-border text-muted-foreground flex-none">
+                    <Award className="size-full" aria-hidden />
+                  </div>
                 )}
               </TimelineConnectItem>
               <div className="flex flex-1 flex-col justify-start gap-2 min-w-0">
