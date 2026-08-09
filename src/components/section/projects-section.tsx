@@ -1,6 +1,7 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import { ProjectCard } from "@/components/project-card";
 import { DATA } from "@/data/resume";
+import { ArrowUpRight } from "lucide-react";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -49,6 +50,17 @@ export default function ProjectsSection() {
                             />
                         </BlurFade>
                     ))}
+                </div>
+                <div className="flex justify-center">
+                    <a
+                        href={DATA.sections.projects.viewMoreUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex h-10 items-center justify-center gap-2 rounded-xl border border-border bg-background px-5 text-sm font-medium text-foreground shadow-sm transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                    >
+                        {DATA.sections.projects.viewMoreLabel}
+                        <ArrowUpRight className="size-4" aria-hidden />
+                    </a>
                 </div>
             </div>
         </section>
