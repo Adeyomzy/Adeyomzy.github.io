@@ -33,6 +33,8 @@ export const DATA = {
       label: "My Projects",
       heading: "Selected data projects",
       text: "Practical analytics work focused on transforming operational data into clear insights and better decisions.",
+      viewMoreLabel: "View more on GitHub",
+      viewMoreUrl: "https://github.com/Adeyomzy?tab=repositories",
     },
     hackathons: {
       order: 6,
@@ -219,21 +221,75 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Oil & Gas Field Production Analytics Dashboard",
-      href: "https://www.linkedin.com/in/adeyomzy/details/projects/",
-      dates: "Portfolio project",
+      title: "Oil & Gas Field Production Analytics",
+      href: "https://github.com/Adeyomzy/Oil_and_gas_field-production-analytics",
+      dates: "2026",
       active: true,
       description:
-        "An analytics dashboard for understanding field and well performance through production trends, field-maturity analysis, creaming-curve visualisation, production metrics and discovery analytics. It helps identify underperforming assets, optimise production strategies and inform exploration investment decisions.",
-      technologies: ["Data Analysis", "Data Modelling", "Power BI", "Oil & Gas Analytics"],
+        "Power BI dashboard for analysing daily well and field performance, including oil, gas and water production, decline rates, water cut, operational conditions and exploration creaming curves. The solution uses Power Query, a star schema and decision-focused KPIs.",
+      technologies: ["Power BI", "Power Query", "Data Modelling", "Oil & Gas Analytics"],
       links: [
         {
-          type: "LinkedIn",
-          href: "https://www.linkedin.com/in/adeyomzy/details/projects/",
-          icon: <Icons.linkedin className="size-3" />,
+          type: "GitHub",
+          href: "https://github.com/Adeyomzy/Oil_and_gas_field-production-analytics",
+          icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
+      image: "https://opengraph.githubassets.com/1/Adeyomzy/Oil_and_gas_field-production-analytics",
+      video: "",
+    },
+    {
+      title: "Credit Risk & Loan Default Analytics",
+      href: "https://github.com/Adeyomzy/Credit-Risk-and-Loan-Default-Analytics---Power-BI-Project",
+      dates: "2025",
+      active: true,
+      description:
+        "End-to-end Power BI analysis of more than 255,000 loan records. It monitors default rates, portfolio exposure and risk drivers across credit score, debt-to-income ratio, employment type, loan purpose and other borrower segments.",
+      technologies: ["Power BI", "DAX", "Power Query", "Credit Risk"],
+      links: [
+        {
+          type: "GitHub",
+          href: "https://github.com/Adeyomzy/Credit-Risk-and-Loan-Default-Analytics---Power-BI-Project",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "https://opengraph.githubassets.com/1/Adeyomzy/Credit-Risk-and-Loan-Default-Analytics---Power-BI-Project",
+      video: "",
+    },
+    {
+      title: "Advanced Inventory Management & Forecasting",
+      href: "https://github.com/Adeyomzy/Advanced_Inventory_Management_Forecasting_System",
+      dates: "2026",
+      active: true,
+      description:
+        "Macro-free Excel inventory system with an executive dashboard, 11 KPIs, stock and purchasing controls, exception alerts and formula-driven forecasting. It calculates safety stock, reorder points, EOQ, stock-out estimates and ABC classifications.",
+      technologies: ["Microsoft Excel", "Forecasting", "KPI Reporting", "Inventory Analytics"],
+      links: [
+        {
+          type: "GitHub",
+          href: "https://github.com/Adeyomzy/Advanced_Inventory_Management_Forecasting_System",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "https://opengraph.githubassets.com/1/Adeyomzy/Advanced_Inventory_Management_Forecasting_System",
+      video: "",
+    },
+    {
+      title: "Banking Customer Analytics Dashboard",
+      href: "https://github.com/Adeyomzy/Banking_Dashboard",
+      dates: "2025",
+      active: true,
+      description:
+        "Banking analytics project combining Python exploratory analysis with a Power BI dashboard. It profiles more than 3,000 customers and examines product uptake, balances, loyalty tiers, demographics and risk weightings for decision support.",
+      technologies: ["Python", "Power BI", "Pandas", "Customer Analytics"],
+      links: [
+        {
+          type: "GitHub",
+          href: "https://github.com/Adeyomzy/Banking_Dashboard",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "https://opengraph.githubassets.com/1/Adeyomzy/Banking_Dashboard",
       video: "",
     },
   ],
