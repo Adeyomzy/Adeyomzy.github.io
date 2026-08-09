@@ -21,7 +21,7 @@ const sectionComponents: Record<string, React.ReactNode> = {
           <h2 className="text-xl font-bold">{DATA.sections.about.heading}</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <div className="prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
+          <div className="prose max-w-full text-justify font-sans leading-relaxed text-muted-foreground dark:prose-invert">
             <Markdown>{DATA.summary}</Markdown>
           </div>
         </BlurFade>
