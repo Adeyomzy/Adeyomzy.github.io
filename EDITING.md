@@ -13,9 +13,9 @@ Use your browser's Find command to locate these placeholder values:
 - `Aspiring Data Analyst...` — the short introduction beneath your name
 - `your-email@example.com` — replace both occurrences
 - `your-linkedin-here` — replace with your LinkedIn profile ending
-- `Sales Performance Dashboard`, `Customer Churn Analysis`, and `Operations Reporting Workbook` — demo projects to replace
+- `Company Name` and `Organisation Name` — demo work-experience entries to replace\n- `University Name` and `Training Provider` — demo education entries to replace\n- `+2340000000000` — replace both occurrences with your phone number, including country code\n- `your-channel` — replace with your YouTube channel handle\n- `Sales Performance Dashboard`, `Customer Churn Analysis`, and `Operations Reporting Workbook` — demo projects to replace
 
-Keep quotation marks, commas, brackets, and labels unchanged. Replace only the words inside quotation marks.
+Keep quotation marks, commas, brackets, and labels unchanged. Replace only the words inside quotation marks. Work and Education use a professional fallback icon while `logoUrl` is empty. Later, you can place an organisation logo in `public` and use a value such as `${BASE_URL}my-school-logo.png`.
 
 ## 2. Profile picture
 
